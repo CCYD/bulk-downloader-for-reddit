@@ -146,4 +146,4 @@ def nameCorrector(string):
             if char in BAD_CHARS:
                 string = string.replace(char,"_")
 
-    return string
+    return string.encode('ascii', 'ignore').decode('ascii')
